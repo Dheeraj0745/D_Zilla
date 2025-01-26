@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: aqua;
+  overflow: hidden;
+
+}
+
+.container {
+  background-image: url(Designer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+
+#scoreCount{
+  font-size: 50px;
+  position: relative;
+  left: 2%;
+  top: 33px;
+  padding: 10px;
+  color: aliceblue;
+ 
+
+}
+.dhiru {
+  background-image:url(Dhiru-removebg-preview-removebg-preview.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 160px;
+  width: 140px;
+  position: absolute;
+  bottom: 0;
+  left: 180px;
+  transform: translateX(-50%);
+}
+.godzilla{
+  background-image:url(Godzilla.png); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 220px;
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+  right: 180px;
+  transform: translateX(-50%);
+
+}
+
+
+.animateDhiru {
+  animation: dhiru 0.9s linear;
+}
+
+.godAni{
+ animation:godAni 4s linear infinite; 
+}
+.gameOver{
+  visibility: hidden;
+  godzilla-classList.remove('godAni')
+}
+ 
+
+@keyframes dhiru {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 600px;
+  }
+
+  75% {
+    bottom: 420px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes godAni{
+  0%{
+    left: 100vw;
+  }
+
+  100%{
+    left: -10vw;
+  }
+}
